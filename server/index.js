@@ -4,6 +4,7 @@ const express  = require('express')
 const mongoose = require('mongoose')
 
 const authRouter = require('./routers/auth')
+const skillRouter = require('./routers/skill')
 
 const connectDB = async () => {
     try {
@@ -24,6 +25,8 @@ const app = express()
 app.use(express.json())
 
 app.use('/api/auth', authRouter)
+app.use('/api/skill', skillRouter)
+
 
 const PORT = process.env.PORT || 5000
 

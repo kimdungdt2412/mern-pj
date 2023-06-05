@@ -7,13 +7,13 @@ const SkillSchema = new Schema({
         required: true
     },
     description: {
-        type: string
+        type: String
     },
     url: {
-        type: string
+        type: String
     },
     status: {
-        type: string,
+        type: String,
         enum: ["TODO", "IN PROGRESS", "DONE"]
     },
     user: {

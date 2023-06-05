@@ -2,6 +2,27 @@ POST http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
+    "username": "dunne01",
+    "password": "dunne"
+}
+
+### 
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
     "username": "dunne",
     "password": "dunne"
+}
+
+###
+POST http://localhost:5000/api/skill
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NDdkODgxY2MzNmZhYzA0NGQxZDRiZDgiLCJpYXQiOjE2ODU5NTgwODB9.2SlmJtUb2P4hosIcL9q_d49EmWnfP5F-xbrQILVaJpo
+
+{
+    "title": "Vue",
+    "description": "JS",
+    "url": "youtube.com"
 }
